@@ -499,12 +499,12 @@ footer {
 .right form input:focus,
 .right form textarea:focus {
     outline-color: #3498db;
+    color: rgb(230, 230, 230);
 }
 
 .right form .text {
     font-size: 17px;
     margin-bottom: 2px;
-    color: #656565;
 }
 
 .right form .btn {
