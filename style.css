@@ -428,6 +428,8 @@ footer {
 
 .left .content .social a {
     padding: 0 2px;
+    
+    color: white;
     text-decoration: none;
 }
 
@@ -440,7 +442,6 @@ footer {
     border-radius: 5px;
     font-size: 18px;
     transition: 0.3s;
-    color: white;
 }
 
 .left .content .social a span:hover {
