@@ -73,9 +73,10 @@ header .logo {
     flex: 1;
     color: #fff;
     margin-left: 50px;
-    text-transform:capitalize;
+    text-transform: capitalize;
     font-size: 18px;
 }
+
 header span {
     font-size: 20px;
     color: #ffbc04;
@@ -143,8 +144,9 @@ header .menu {
 @media(max-width:850px) {
 
     header {
-        position:relative;
+        position: relative;
     }
+
     .search-box button {
         position: fixed;
     }
@@ -153,33 +155,35 @@ header .menu {
         position: fixed;
         top: 100px;
         right: -100%;
-        background: rgba(0, 0, 0, 0.877);
+        background: rgba(0, 0, 0, 0.575);
         height: calc(100vh - 100px);
         width: 50%;
         flex-direction: column;
         align-items: center;
-        transition: right 0.5s linear;
+        transition: left 0.5s linear;
     }
 
     header .menu {
         display: flex;
         text-align: center;
         margin-left: 20px;
-        
+        cursor: pointer;
+        width: 50px;
+
 
     }
 
     #chk1:checked~ul {
         left: 0;
-        
+
     }
 }
 
 @media(max-width:600px) {
     header .logo {
-        font-size: 40px;
+        font-size: 24px;
         text-align: center;
-        margin-left: -25px;
+        margin-left: -30px;
     }
 
     header .logo span {
@@ -229,7 +233,7 @@ section button:hover {
     border: 1px solid rgb(255, 216, 45);
 }
 
-section .list-films button li{
+section .list-films button li {
     text-align: center;
     line-height: 35px;
     font-weight: 100;
@@ -247,17 +251,18 @@ section .list-films li a:hover {
     color: #ffff;
 }
 
-@media only screen and (max-width: 1023px) {
-    section .categoria-films{
+@media only screen and (max-width: 700px) {
+    section .categoria-films {
         margin-top: 0%;
     }
-    section .list-films button{
-display: flex;
-margin-bottom: 2rem;
+
+    section .list-films button {
+        display: flex;
+        margin-bottom: 2rem;
     }
-
-
 }
+
+
 
 /*Slide de Filems*/
 
@@ -266,13 +271,14 @@ margin-bottom: 2rem;
     width: 100%;
     margin: 0 auto;
     margin-top: 10%;
-  }
-  .slider-wrapper {
-    position: relative;
-  }
+}
 
-  /*Botão LEFT e RIGHT*/
-  .slider-wrapper .slide-button {
+.slider-wrapper {
+    position: relative;
+}
+
+/*Botão LEFT e RIGHT*/
+.slider-wrapper .slide-button {
     position: absolute;
     top: 50%;
     outline: none;
@@ -290,42 +296,47 @@ margin-bottom: 2rem;
     justify-content: center;
     border-radius: 0%;
     transform: translateY(-50%);
-  }
+}
 
-  .slider-wrapper .slide-button#prev-slide {
+.slider-wrapper .slide-button#prev-slide {
     left: -25px;
     display: none;
-  }
-  .slider-wrapper .slide-button#next-slide {
+}
+
+.slider-wrapper .slide-button#next-slide {
     right: -25px;
-  }
-  .slider-wrapper .image-list {
+}
+
+.slider-wrapper .image-list {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     gap: 20px;
     font-size: 0;
     list-style: none;
     margin-bottom: 30px;
-    overflow-x:auto;
+    overflow-x: auto;
     scrollbar-width: none;
-  }
-  .slider-wrapper .image-list::-webkit-scrollbar {
+}
+
+.slider-wrapper .image-list::-webkit-scrollbar {
     display: none;
-  }
-  .slider-wrapper .image-list .image-item {
+}
+
+.slider-wrapper .image-list .image-item {
     width: 255px;
     height: 400px;
-    object-fit:contain;
-  }
-  .container .slider-scrollbar {
+    object-fit: contain;
+}
+
+.container .slider-scrollbar {
     height: 24px;
     width: 100%;
     display: flex;
     align-items: center;
-  }
+}
 
-  /*Parte branca do botao*/
-  .slider-scrollbar .scrollbar-track {
+/*Parte branca do botao*/
+.slider-scrollbar .scrollbar-track {
     background: #ffffff;
     width: 100%;
     height: 2px;
@@ -333,13 +344,14 @@ margin-bottom: 2rem;
     align-items: center;
     border-radius: 4px;
     position: relative;
-  }
-  .slider-scrollbar:hover .scrollbar-track {
-    height: 4px;
-  }
+}
 
-  /*Botão rasteira amarelo*/
-  .slider-scrollbar .scrollbar-thumb {
+.slider-scrollbar:hover .scrollbar-track {
+    height: 4px;
+}
+
+/*Botão rasteira amarelo*/
+.slider-scrollbar .scrollbar-thumb {
     position: absolute;
     background: #ffbc04;
     top: 0;
@@ -348,42 +360,49 @@ margin-bottom: 2rem;
     height: 100%;
     cursor: grab;
     border-radius: inherit;
-  }
-  .slider-scrollbar .scrollbar-thumb:active {
+}
+
+.slider-scrollbar .scrollbar-thumb:active {
     cursor: grabbing;
     height: 8px;
     top: -2px;
-  }
-  .slider-scrollbar .scrollbar-thumb::after {
+}
+
+.slider-scrollbar .scrollbar-thumb::after {
     content: "";
     position: relative;
     left: 0;
     right: 0;
     top: -10px;
     bottom: -10px;
-  }
-  /* Styles for mobile and tablets */
-  @media only screen and (max-width: 1023px) {
+}
+
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
     .container {
         width: 100%;
         margin-top: 3%;
     }
+
     .slider-wrapper .slide-button {
-      display: none !important;
+        display: none !important;
     }
+
     .slider-wrapper .image-list {
-      gap: 10px;
-      margin-bottom: 15px;
-      scroll-snap-type: x mandatory;
+        gap: 10px;
+        margin-bottom: 15px;
+        scroll-snap-type: x mandatory;
     }
+
     .slider-wrapper .image-list .image-item {
-      width: 280px;
-      height: 380px;
+        width: 280px;
+        height: 380px;
     }
+
     .slider-scrollbar .scrollbar-thumb {
-      width: 20%;
+        width: 20%;
     }
-  }
+}
 
 
 /*Começo do rodapé*/
@@ -439,7 +458,7 @@ footer {
 
 .left .content .social a {
     padding: 0 2px;
-    
+
     color: white;
     text-decoration: none;
 }
