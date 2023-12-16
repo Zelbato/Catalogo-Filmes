@@ -143,6 +143,12 @@ header .menu {
 
 @media(max-width:850px) {
 
+    .fundo {
+        background: url('Imagens/The\ Hunger.webp') no-repeat center fixed;
+        position: relative;
+        -webkit-background-size: cover;
+    }
+
     header {
         position: relative;
     }
