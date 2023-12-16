@@ -164,7 +164,7 @@ header .menu {
     header .menu {
         display: flex;
         text-align: center;
-        margin-left: 10px;
+        margin-left: 20px;
         
 
     }
@@ -177,9 +177,9 @@ header .menu {
 
 @media(max-width:600px) {
     header .logo {
-        font-size: 20px;
+        font-size: 40px;
         text-align: center;
-        margin-left: -15px;
+        margin-left: -25px;
     }
 
     header .logo span {
