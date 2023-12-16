@@ -161,7 +161,7 @@ header .menu {
         position: fixed;
         top: 100px;
         right: -100%;
-        background: rgba(0, 0, 0, 0.575);
+        background: rgba(0, 0, 0, 0.829);
         height: calc(100vh - 100px);
         width: 50%;
         flex-direction: column;
@@ -189,7 +189,7 @@ header .menu {
     header .logo {
         font-size: 24px;
         text-align: center;
-        margin-left: -30px;
+        margin-left: -40px;
     }
 
     header .logo span {
